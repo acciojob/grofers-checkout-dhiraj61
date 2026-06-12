@@ -1,7 +1,7 @@
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
-let priceList = Array.from(document.querySelectorAll('.price')).map(item => Number(item.innerText));
+let priceList = Array.from(document.querySelectorAll('.prices')).map(item => Number(item.innerText));
 let table = document.getElementsByTagName('table');
 
 const getSum = () => {
@@ -12,7 +12,6 @@ const getSum = () => {
 	prtitleTd.innerText = 'Total Price';
 	tr.appendChild(prtitleTd);
 	let pricetd = document.createElement('td');
-	// pricetd.classList.add('prices');
 	pricetd.innerText = total;
 	tr.appendChild(pricetd);
 	table[0].appendChild(tr);
