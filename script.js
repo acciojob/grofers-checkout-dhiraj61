@@ -12,6 +12,7 @@ const getSum = () => {
 	prtitleTd.innerText = 'Total Price';
 	tr.appendChild(prtitleTd);
 	let pricetd = document.createElement('td');
+	// pricetd.classList.add('prices');
 	pricetd.innerText = total;
 	tr.appendChild(pricetd);
 	table[0].appendChild(tr);
